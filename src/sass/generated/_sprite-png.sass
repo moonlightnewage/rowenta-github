@@ -1,0 +1,142 @@
+$icons: (0:0)
+$icons: map-merge($icons,('arrow-down-pink-slim': (X: -295px, Y:0px, W: 32px, H: 52px, TW: 327px, TH: 238px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('arrow-down-pink': (X: -48px, Y:-99px, W: 84px, H: 38px, TW: 327px, TH: 238px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('arrow-left-pink-hover': (X: -111px, Y:-147px, W: 53px, H: 32px, TW: 327px, TH: 238px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('arrow-left-pink': (X: 0px, Y:-99px, W: 38px, H: 84px, TW: 327px, TH: 238px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('arrow-left': (X: -295px, Y:-62px, W: 14px, H: 21px, TW: 327px, TH: 238px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('arrow-right-pink-hover': (X: -48px, Y:-147px, W: 53px, H: 32px, TW: 327px, TH: 238px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('arrow-right-pink': (X: -247px, Y:0px, W: 38px, H: 84px, TW: 327px, TH: 238px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('arrow-right': (X: -295px, Y:-93px, W: 14px, H: 21px, TW: 327px, TH: 238px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('arrow-up-pink-hover': (X: -247px, Y:-94px, W: 32px, H: 53px, TW: 327px, TH: 238px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('arrow-up-pink': (X: -142px, Y:-99px, W: 84px, H: 38px, TW: 327px, TH: 238px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('heart-large': (X: 0px, Y:-193px, W: 58px, H: 45px, TW: 327px, TH: 238px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('heart-small': (X: -68px, Y:-193px, W: 45px, H: 36px, TW: 327px, TH: 238px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('play': (X: 0px, Y:0px, W: 89px, H: 89px, TW: 327px, TH: 238px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('upload-black': (X: -173px, Y:0px, W: 64px, H: 80px, TW: 327px, TH: 238px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('upload-gray': (X: -99px, Y:0px, W: 64px, H: 80px, TW: 327px, TH: 238px, IMG: '../img/sprite.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+  $icon: map-get($icons, $icon)
+  @return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  width: icon-attr($iconName, W)
+  height: icon-attr($iconName, H)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  $width: icon-attr($iconName, W)
+  $height: icon-attr($iconName, H)
+  width: $width/2
+  height: $height/2
+  $x: icon-attr($iconName, X)
+  $y: icon-attr($iconName, Y)
+  background-position: $x/2 $y/2
+  $tw: icon-attr($iconName, TW)   
+  $th: icon-attr($iconName, TH)
+  background-size: $tw/2 $th/2    
+
+
+@mixin s($i)
+  +sprite($i)
+@mixin sp($i)
+  +sprite-position($i)
+@mixin sr($i)
+  +sprite-retina($i)  
+
+//
+//.icon-arrow-down-pink-slim
+//  width: 32px
+//  height: 52px
+//  background-image: url('../img/sprite.png')
+//  background-position: -295px 0px
+//
+//.icon-arrow-down-pink
+//  width: 84px
+//  height: 38px
+//  background-image: url('../img/sprite.png')
+//  background-position: -48px -99px
+//
+//.icon-arrow-left-pink-hover
+//  width: 53px
+//  height: 32px
+//  background-image: url('../img/sprite.png')
+//  background-position: -111px -147px
+//
+//.icon-arrow-left-pink
+//  width: 38px
+//  height: 84px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px -99px
+//
+//.icon-arrow-left
+//  width: 14px
+//  height: 21px
+//  background-image: url('../img/sprite.png')
+//  background-position: -295px -62px
+//
+//.icon-arrow-right-pink-hover
+//  width: 53px
+//  height: 32px
+//  background-image: url('../img/sprite.png')
+//  background-position: -48px -147px
+//
+//.icon-arrow-right-pink
+//  width: 38px
+//  height: 84px
+//  background-image: url('../img/sprite.png')
+//  background-position: -247px 0px
+//
+//.icon-arrow-right
+//  width: 14px
+//  height: 21px
+//  background-image: url('../img/sprite.png')
+//  background-position: -295px -93px
+//
+//.icon-arrow-up-pink-hover
+//  width: 32px
+//  height: 53px
+//  background-image: url('../img/sprite.png')
+//  background-position: -247px -94px
+//
+//.icon-arrow-up-pink
+//  width: 84px
+//  height: 38px
+//  background-image: url('../img/sprite.png')
+//  background-position: -142px -99px
+//
+//.icon-heart-large
+//  width: 58px
+//  height: 45px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px -193px
+//
+//.icon-heart-small
+//  width: 45px
+//  height: 36px
+//  background-image: url('../img/sprite.png')
+//  background-position: -68px -193px
+//
+//.icon-play
+//  width: 89px
+//  height: 89px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px 0px
+//
+//.icon-upload-black
+//  width: 64px
+//  height: 80px
+//  background-image: url('../img/sprite.png')
+//  background-position: -173px 0px
+//
+//.icon-upload-gray
+//  width: 64px
+//  height: 80px
+//  background-image: url('../img/sprite.png')
+//  background-position: -99px 0px
+//

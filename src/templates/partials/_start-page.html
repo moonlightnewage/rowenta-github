@@ -1,0 +1,49 @@
+{% from "data/data.html" import stages, prizes, slides as data %}
+
+<section class="start-page">
+    <!--BEGIN - START PAGE TITLE-->
+    <h1 class="start-page__title">
+        бездоганна укладка з турботою про волосся
+    </h1>
+    <!--END - START PAGE TITLE-->
+    
+    <!--BEGIN - START PAGE STAGES-->
+    <ol class="stages">
+        {% for stage in stages %}
+        <li class="stages__stage">
+            <span class="stages__txt">{{stage}}</span>
+        </li>
+        {% endfor %}
+    </ol>
+    <!--END - START PAGE STAGES-->
+    
+    <!--BEGIN - START PAGE PRIZES-->
+    <div class="prizes">
+        {% for prize in prizes %}
+        <div class="prizes__block">
+            <div class="prizes__txt">
+                <div class="prizes__numb">{{prize.number}}</div>
+                <div class="prizes__name">{{prize.name}}</div>
+            </div>
+            <div class="prizes__photo">
+                <img src="img/{{prize.img}}" class="prizes__img prizes__img_{{prize.imgType}}">
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <!--END - START PAGE TITLE-->
+        
+    <!--BEGIN - START SLIDER-->
+    <div class="start-slider js-comparison-container" start-position="51">
+        <div class="start-slider__img comparison-image" style="background-image: url(img/person-l.jpg)">
+            <p class="start-slider__txt start-slider__txt_left">Який образ підходить мені більше?</p>
+        </div>
+        
+        <div class="start-slider__img comparison-image" style="background-image: url(img/person-r.jpg)">
+            <p class="start-slider__txt start-slider__txt_right">Який образ підходить мені більше?</p>
+        </div>
+        
+    </div>
+    <!--END - START SLIDER--> 
+    </div>
+</section>

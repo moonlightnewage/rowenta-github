@@ -1,0 +1,89 @@
+.start-page
+    min-height: 815px
+    position: relative
+    &__title
+        width: 100%
+        margin-top: 24px
+        font-size: 76px
+        color: #fff
+        text-align: center
+        text-transform: uppercase
+        position: absolute
+        z-index: 10
+        +myriad-cl
+.stages
+    position: absolute
+    z-index: 9
+    top: 120px
+    left: 80px
+    +counter(1, '')
+    &__stage
+        max-width: 250px
+        +vertical
+        text-align: left
+        padding: 20px 0
+        +jour
+        &:before
+            font-size: 160px
+            width: 20%
+            line-height: 0.85
+            vertical-align: top
+    &__txt
+        width: 80%
+        display: inline-block
+        vertical-align: top
+        font-size: 32px
+        padding-left: 20px
+.prizes
+    position: absolute
+    z-index: 1
+    top: 150px
+    right: 135px
+    &__block
+        text-align: right 
+        margin: 50px 0
+    &__txt
+        vertical-align: bottom
+        display: inline-block
+    &__numb
+        font-size: 48px
+        line-height: 1
+        color: #fff
+        +myriad-cb
+    &__name
+        font-size: 48px
+        line-height: 1
+        color: #fff
+        +myriad-cl
+    &__photo
+        display: inline-block
+        vertical-align: bottom
+        width: 127px
+        height: 96px
+        position: relative
+        &:before
+            content: ''
+            position: absolute
+            top: 7px
+            left: 7px
+            border: 3px solid $gray
+            width: 100%
+            height: 100%
+        &:after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background-color: $d-gray
+            border: 3px solid $l-pink
+    &__img
+        position: absolute
+        left: 0
+        bottom: 0
+        z-index: 1
+        &_top
+            bottom: 16px
+        &_btm
+            bottom: 3px
