@@ -1,0 +1,38 @@
+.upload
+    padding-top: 90px
+    padding-bottom: 60px
+    &__container
+        border-bottom: 1px solid $light
+        position: relative
+        &:before
+            content: ''
+            width: 220px
+            height: 1px
+            background-color: #fff
+            display: block
+            position: absolute
+            bottom: -1px
+            left: 0
+    &__inner
+        padding: 80px 0
+        +clr
+    &__txt
+        font-size: 32px
+        text-align: center
+        +sitka
+    &__block
+        width: 440px
+        height: 440px
+        margin: 0 auto
+        transition: all 0.3s ease
+        cursor: pointer
+        &:hover
+            .block__add
+                background-color: $l-gray
+                border: 3px solid $l-gray
+            .icon-upload
+                +s(upload-gray)
+            .block__msg_bold
+                color: $d-coral
+            .block__img
+                filter: grayscale(100%)

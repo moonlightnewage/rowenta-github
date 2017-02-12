@@ -1,0 +1,45 @@
+.learn-more
+    min-height: 900px
+    position: relative
+    &:before
+        content: 'premium'
+        font-size: 320px
+        line-height: 0.8
+        color: $l-gray
+        position: absolute
+        right: 0
+        top: 0
+        z-index: -1
+        +jour
+    &:after
+        content: 'care'
+        font-size: 320px
+        line-height: 0.8
+        color: $l-gray
+        position: absolute
+        left: 15%
+        bottom: 0
+        z-index: -1
+        +jour
+    &__block
+        width: 545px
+        height: 555px
+        margin: 68px auto
+        &:after
+            top: 25px
+            left: 25px
+        &-btn
+            position: absolute
+            bottom: -15px
+            left: 50%
+            transform: translate(-50%)
+    &__inner
+        max-width: 615px
+        min-height: 555px
+        margin: 68px auto
+        position: relative
+    &__text
+        padding-top: 110px
+        font-size: 34px
+        text-align: center
+        +sitka

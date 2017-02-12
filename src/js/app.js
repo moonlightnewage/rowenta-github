@@ -10,7 +10,7 @@ import ImageComparison from 'image-comparison';
 sayHello();
 
 var imageComparisonCollection = document.querySelectorAll('.js-comparison-container');
-      for (var i = 0; i < imageComparisonCollection.length; i++) {
+    for (var i = 0; i < imageComparisonCollection.length; i++) {
         var imageWidget = imageComparisonCollection[i];
         var images = imageWidget.querySelectorAll('.comparison-image');
         new ImageComparison({
@@ -25,4 +25,8 @@ var imageComparisonCollection = document.querySelectorAll('.js-comparison-contai
             }
           ],
         });
-      }
+    }
+
+$(document).ready(function() {
+
+});
