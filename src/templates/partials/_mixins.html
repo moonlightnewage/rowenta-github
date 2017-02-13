@@ -2,6 +2,17 @@
 <svg class="icon icon-{{i}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
 {% endmacro %}
 
+{% macro prize(type, mod, img, texttop, textbtm) %}
+<div class="prizes__block prizes__block_{{type}} prizes__block_{{type}}_{{mod}}">
+    <div class="prizes__txt prizes__txt_{{type}}">
+        <div class="prizes__numb">{{texttop}}</div>
+        <div class="prizes__name">{{textbtm}}</div>
+    </div>
+    <div class="prizes__photo">
+        <img src="img/{{img}}" alt="" class="prizes__img">
+    </div>
+</div>
+{% endmacro %}
 
 {% macro img(type, src, text, mod=false) %}
 <div class="block {{type}}__block">
@@ -26,8 +37,8 @@
 </div>
 {% endmacro %}
 
-{% macro btn(type, text) %}
-<div class="block block-btn {{type}}__block-btn">
+{% macro btn(type, text, mod) %}
+<div class="block block-btn {{type}}__block-btn {{mod}}">
     <button class="btn">{{text}}</button>
 </div>
 {% endmacro %}

@@ -1,0 +1,23 @@
+.products
+    min-height: 905px
+    +image('bg-products.jpg')
+    +cover
+    position: relative
+    &__img
+        width: 760px
+        height: 850px
+        +cover
+        position: absolute
+        left: 0
+        bottom: 0
+        z-index: 0
+    &__inner
+        width: 50%
+        min-height: inherit
+        position: absolute
+        right: 0
+        bottom: 0
+        top: 0
+        background-color: rgba(0, 0, 0, 0.5)
+        padding: 65px 50px
+        z-index: 0

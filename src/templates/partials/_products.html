@@ -1,0 +1,27 @@
+{% from "data/data.html" import products %}
+<section class="products">
+    <div class="products__img" style="background-image: url(img/person-products.png)"></div>
+    <div class="products__inner">
+        <div class="products-slider js-products-slider">
+           {% for product in products %}
+            <div class="products-slider__slide">
+                <div class="products-slider__img" style="background-image: url('img/{{product.img}}')"></div>
+                
+                <div class="products-slider__txt">{{product.text}}</div>
+                
+                {{mixins.btn('products-slider', 'детальні характеристики')}}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="products-slider__control products-slider__control_l">
+            <div class="products-slider__arr">
+                <span class="icon-arrow-left-pink"></span>
+            </div>
+        </div>
+        <div class="products-slider__control products-slider__control_r">
+            <div class="products-slider__arr">
+                <span class="icon-arrow-right-pink"></span>
+            </div>
+        </div>
+    </div>
+</section>

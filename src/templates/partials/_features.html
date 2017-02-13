@@ -5,7 +5,7 @@
         ROWENTA BRUSH & STRAIGHT SF7510
     </div>
     
-    <div class="features__img" style="background-image: url(img/features-brush.png)">
+    <div class="features__img" style="background-image: url(img/straight-features.png)">
        
         {% for component in components %}
         <div class="pointer pointer_{{component.name}}">
@@ -23,7 +23,7 @@
         
     </div>
     <div class="features__inner">
-        {{mixins.btn('features', 'Детальні характеристики')}}
+        {{mixins.btn('features', 'Детальні характеристики', 'js-btn-dropdown')}}
         <div class="features__icon">
             {{mixins.icon('arrow-down-rounded')}}
         </div>
@@ -32,11 +32,13 @@
             <ul class="features__col features__col_l">
             {% for feature in featuresleft %}
             <li class="features__item">
-                <span class="features__name">{{feature.name}}</span>
-                <span class="features__desc">{{feature.desc}}
-                    {% if not feature.desc %}
+                <span class="features__name">
+                    <span>{{feature.name}}</span>
+                </span>
+                <span class="features__desc">
+                   <span>{{feature.desc}}{% if not feature.desc %}
                     {{mixins.icon('check')}}
-                    {% endif %}
+                    {% endif %}</span>
                 </span>
             </li>
             {% endfor %}
@@ -45,11 +47,13 @@
             <ul class="features__col features__col_r">
             {% for feature in featuresright %}
             <li class="features__item">
-                <span class="features__name">{{feature.name}}</span>
-                <span class="features__desc">{{feature.desc}}
-                    {% if not feature.desc %}
+                <span class="features__name">
+                    <span>{{feature.name}}</span>
+                </span>
+                <span class="features__desc">
+                   <span>{{feature.desc}}{% if not feature.desc %}
                     {{mixins.icon('check')}}
-                    {% endif %}
+                    {% endif %}</span>
                 </span>
             </li>
             {% endfor %}

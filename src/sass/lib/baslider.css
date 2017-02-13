@@ -1,0 +1,63 @@
+.ba-slider {
+    position: relative;
+}
+.ba-slider img {
+    position: absolute;
+    width: 100%;
+}
+.ba-slider-image {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ba-slider-before-image {
+    z-index: 5;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.ba-control {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    z-index: 10;
+    top: 0;
+    overflow: hidden;
+}
+.ba-control-area {
+    position:absolute;
+    z-index:1;
+    width:26px;
+    height:100%;
+    left:0;
+    margin-left:-13px;
+}
+.ba-control-bar {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 145px;
+}
+
+.ba-left-arrow, .ba-right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.ba-left-arrow {
+    left: 0;
+}
+
+.ba-right-arrow {
+    right: 0;
+}
+
+.ba-control-handle {
+    cursor: move;
+    position: absolute;
+    z-index: 1;
+}

@@ -7,20 +7,33 @@
     right: 0
     bottom: 0
     &__img
-    	min-height: 817px
+    	height: 817px
+    &__person
+        position: absolute
+        bottom: 0
+        z-index: -1
     &__txt
     	width: 100%
-    	text-align: center
     	position: absolute
     	bottom: 45px
     	&_left
-            padding-left: 60px
+            left: 245px
             font-size: 80px
             color: #000
             line-height: 1.2
             +jour
     	&_right
-    		padding-left: 70px
-    		font-size: 50px
-    		color: #fff
-    		+sitka
+            left: 250px
+            font-size: 50px
+            color: #fff
+            +sitka
+    
+
+.ba-control-handle
+    +s(heart-large)
+    +vcenter
+.ba-left-arrow
+    +s(arrow-left)
+.ba-right-arrow
+    +s(arrow-right)
+    
