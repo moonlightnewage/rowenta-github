@@ -8,6 +8,7 @@ import sayHello from './lib/sayHello.js';
 import slider from './lib/baslider.js';
 import dropdown from './lib/dropdown.js';
 import videoPlayer from './lib/video.js';
+import imageGallery from './lib/slider.js';
 
 import slick from 'slick-carousel';
 
@@ -16,26 +17,25 @@ sayHello();
 
 
 $(document).ready(function() {
-    //$('.vote-slider').slick();
+    
+    imageGallery();
     
     $('.js-start-slider').beforeAfter();
     
     dropdown('.js-btn-dropdown');
     
     
-    var previewSlider = $('.js-vote-slider').slick({
+    var previewSlider = $('.js-preview-slider').slick({
+        infinite: false,
         prevArrow: $('.icon-arrow-l-slim'),
         nextArrow: $('.icon-arrow-r-slim'),
-        asNavFor: '.js-aside-vote-slider',
-        fade: true
-    });
-    
-    var previewAsideSlider = $('.js-aside-vote-slider').slick({
-        arrows: false,
         vertical: true,
         verticalSwiping: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
         initialSlide: 1
     });
+    
     
 //    $(previewSlider).on('afterChange', function(event, slick, currentSlide){
 //        if (currentSlide == 2) { 
@@ -73,11 +73,13 @@ $(document).ready(function() {
     videoPlayer();
     
     var videoSlider = $('.js-video-slider').slick({
-        arrows: false,
         infinite: false,
+        prevArrow: $('.video-slider__control_t'),
+        nextArrow: $('.video-slider__control_b'),
         vertical: true,
         verticalSwiping: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        initialSlide: 1
     });
 });

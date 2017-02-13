@@ -3,33 +3,23 @@
         <h2 class="title vote__title">Проголосуйте
         <br /> за учасників</h2>
         <div class="vote__inner">
-            <div class="vote-slider js-vote-slider">
-                <div class="vote-slider__slide">
-                    {{mixins.img('vote-slider', 'compare-pink.jpg')}}
-                </div>
-                <div class="vote-slider__slide">
-                    {{mixins.img('vote-slider', 'compare-black.jpg')}}
-                </div>
-                <div class="vote-slider__slide">
-                    {{mixins.img('vote-slider', 'compare-black.jpg')}}
-                </div>
-            </div>
-            <div class="vote-slider__controls">
-                <span class="vote-slider__control vote-slider__control_l">
+            <div class="preview-bl"></div>
+            <div class="preview-slider__controls">
+                <span class="preview-slider__control preview-slider__control_l">
                     {{mixins.icon('arrow-l-slim')}}
                 </span>
-                <span class="vote-slider__control vote-slider__control_r">
+                <span class="preview-slider__control preview-slider__control_r">
                     {{mixins.icon('arrow-r-slim')}}
                 </span>
             </div>
         </div>
         <div class="vote__aside">
-            <div class="vote-aside-slider js-aside-vote-slider">
-               <div class="vote-aside-slider__slide" style="background-image: url(img/compare-pink.jpg)"></div>
-                <div class="vote-aside-slider__slide" style="background-image: url(img/compare-black.jpg)"></div>
-                <div class="vote-aside-slider__slide" style="background-image: url(img/compare-black.jpg)"></div>
+            <div class="preview-slider js-preview-slider">
+                <div class="preview-slider__slide" style="background-image: url(img/compare-pink.jpg)"></div>
+                <div class="preview-slider__slide" style="background-image: url(img/compare-black.jpg)"></div>
+                <div class="preview-slider__slide" style="background-image: url(img/compare-black.jpg)"></div>
             </div>
-            <a href="#" class="vote-aside-slider__all">
+            <a href="#" class="vote__all">
             <span>Переглянути усi</span>
             {{mixins.icon('arrow-r-slim')}}
             </a>

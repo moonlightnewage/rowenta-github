@@ -176,40 +176,24 @@
         <div class="vote__img" style="background-image: url(img/straight-vote.png)"></div>
         <h2 class="title vote__title">Проголосуйте <br /> за учасників</h2>
         <div class="vote__inner">
-          <div class="vote-slider js-vote-slider">
-            <div class="vote-slider__slide">
-              <div class="block vote-slider__block">
-                <div class="block__img" style="background-image: url(img/compare-pink.jpg)"></div>
-              </div>
-            </div>
-            <div class="vote-slider__slide">
-              <div class="block vote-slider__block">
-                <div class="block__img" style="background-image: url(img/compare-black.jpg)"></div>
-              </div>
-            </div>
-            <div class="vote-slider__slide">
-              <div class="block vote-slider__block">
-                <div class="block__img" style="background-image: url(img/compare-black.jpg)"></div>
-              </div>
-            </div>
-          </div>
-          <div class="vote-slider__controls"> <span class="vote-slider__control vote-slider__control_l">
+          <div class="preview-bl"></div>
+          <div class="preview-slider__controls"> <span class="preview-slider__control preview-slider__control_l">
                     
 <svg class="icon icon-arrow-l-slim"><use xlink:href="img/sprite.svg#icon-arrow-l-slim"></use></svg>
 
-                </span> <span class="vote-slider__control vote-slider__control_r">
+                </span> <span class="preview-slider__control preview-slider__control_r">
                     
 <svg class="icon icon-arrow-r-slim"><use xlink:href="img/sprite.svg#icon-arrow-r-slim"></use></svg>
 
                 </span> </div>
         </div>
         <div class="vote__aside">
-          <div class="vote-aside-slider js-aside-vote-slider">
-            <div class="vote-aside-slider__slide" style="background-image: url(img/compare-pink.jpg)"></div>
-            <div class="vote-aside-slider__slide" style="background-image: url(img/compare-black.jpg)"></div>
-            <div class="vote-aside-slider__slide" style="background-image: url(img/compare-black.jpg)"></div>
+          <div class="preview-slider js-preview-slider">
+            <div class="preview-slider__slide" style="background-image: url(img/compare-pink.jpg)"></div>
+            <div class="preview-slider__slide" style="background-image: url(img/compare-black.jpg)"></div>
+            <div class="preview-slider__slide" style="background-image: url(img/compare-black.jpg)"></div>
           </div>
-          <a href="#" class="vote-aside-slider__all"> <span>Переглянути усi</span> <svg class="icon icon-arrow-r-slim"><use xlink:href="img/sprite.svg#icon-arrow-r-slim"></use></svg> </a>
+          <a href="#" class="vote__all"> <span>Переглянути усi</span> <svg class="icon icon-arrow-r-slim"><use xlink:href="img/sprite.svg#icon-arrow-r-slim"></use></svg> </a>
         </div>
       </section>
       <!-- END - VOTE -->
@@ -355,9 +339,12 @@
       <!--BEGIN - VIDEO -->
       <section class="video">
         <div class="video__player js-video-player">
-          <div class="video__main"> <iframe class="video__iframe" width="100%" height="100%" src="https://www.youtube.com/embed/ZS1ptjR3zhA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> </div>
+          <div class="video__main"> <img src="" alt="" class="video__poster_main">
+            <div class="video__icon_play"></div> <iframe class="video__iframe" width="100%" height="100%" src="" frameborder="0" allowfullscreen></iframe> </div>
           <div class="video__aside">
-            <div class="video-slider js-video-slider"> <img src="//img.youtube.com/vi/JDNKqbWkK1E/mqdefault.jpg" class="video__poster"> <img src="//img.youtube.com/vi/RSVy4nITc-U/mqdefault.jpg" class="video__poster"> <img src="//img.youtube.com/vi/nJZX18fCCiI/mqdefault.jpg" class="video__poster">              <img src="//img.youtube.com/vi/OG1xvb0OaYE/mqdefault.jpg" class="video__poster"> </div>
+            <div class="video-slider js-video-slider"> <img src="//img.youtube.com/vi/ZS1ptjR3zhA/maxresdefault.jpg" class="video__poster"> <img src="//img.youtube.com/vi/RSVy4nITc-U/maxresdefault.jpg" class="video__poster"> <img src="//img.youtube.com/vi/a0bUfAk4u5I/maxresdefault.jpg" class="video__poster">              <img src="//img.youtube.com/vi/sO-Eng6oxKg/maxresdefault.jpg" class="video__poster"> </div>
+            <div class="video-slider__control video-slider__control_t"> <span class="icon-arrow-up-pink"></span> </div>
+            <div class="video-slider__control video-slider__control_b"> <span class="icon-arrow-down-pink"></span> </div>
           </div>
         </div>
       </section>

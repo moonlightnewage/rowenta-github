@@ -1,3 +1,43 @@
 .video-slider
-    height: 585px
+    height: 582px
     overflow: hidden
+    cursor: pointer
+    &__control
+        width: 100px
+        height: 100px
+        background-color: rgba(0, 0, 0, 0.6)
+        border: 3px solid rgba(45, 45, 45, 0.2)
+        position: absolute
+        right: 10px
+        cursor: pointer
+        &:hover
+            .icon-arrow-up-pink
+                +s(arrow-up-pink-hover)
+            .icon-arrow-down-pink
+                +s(arrow-down-pink-hover)
+            &:after
+                content: ''
+                width: inherit
+                height: inherit
+                position: absolute
+                right: 10px
+                border: 3px solid #000
+        &_t
+            top: 10px
+            &:hover
+                &:after
+                    top: 10px
+        &_b
+            bottom: 10px
+            &:hover
+                &:after
+                    bottom: 10px
+.icon-arrow-up-pink
+    +s(arrow-up-pink)
+    +vcenter
+.icon-arrow-down-pink
+    +s(arrow-down-pink)
+    +vcenter
+.slick-vertical
+    .slick-slide
+        border: none
