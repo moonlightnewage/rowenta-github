@@ -1,0 +1,96 @@
+.features
+    min-height: 900px
+    position: relative
+    overflow: hidden
+    &:before
+        content: ''
+        width: 100%
+        min-height: 200%
+        background-color: $l-pink
+        display: block
+        position: absolute
+        z-index: -1
+    &:after
+        content: ''
+        width: 200%
+        min-height: 200%
+        background-color: $m-gray
+        display: block
+        position: absolute
+        top: 65%
+        left: -50%
+        transform: rotate(20deg)
+        z-index: -1
+    &__img
+        max-width: 1280px
+        min-height: 570px
+        margin: 130px auto
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        background-size: contain
+        position: relative
+    &__inner
+        max-width: 1280px
+        margin: -100px auto 0
+    &__block-btn.is-visible
+        transition: all 1s ease
+        transform: translate($features-margin, 0)
+        background: transparent
+        border: none
+    &__icon
+        width: 400px
+        text-align: center
+        &.is-hidden
+            opacity: 0
+            transform: translate(0, 20px)
+    &__list
+        max-width: 1155px
+        min-height: 415px
+        position: relative
+        +clr
+        &:after
+            content: ''
+            width: 100%
+            min-height: inherit
+            border: 3px solid $gray
+            position: absolute
+            z-index: 0
+            top: 20px
+            left: 20px
+    &__col
+        padding: 40px
+        position: absolute
+        z-index: 1
+        width: 50%
+        min-height: inherit
+        background-color: #fff
+        &_l
+            left: 0
+        &_r
+            right: 0
+    
+    &__item
+        display: inline-block
+        width: 1155/2 + px
+        +myriad-c
+        font-size: 24px
+        padding: 20px
+    &__name
+        display: inline-block
+        width: 210px
+        text-align: left
+    &__desc
+        display: inline-block
+        text-align: right
+.icon-arrow-down-rounded
+    width: 45px
+    height: 45px
+    display: inline-block
+    text-align: center
+    margin-left: $features-margin
+    margin-top: -20px
+.icon-check
+    width: 36px
+    height: 25px
+    
+            

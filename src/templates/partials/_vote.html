@@ -3,19 +3,29 @@
     <div class="container">
         <h2 class="title vote__title">Проголосуйте
         <br /> за учасників</h2>
-    <div class="vote-slider js-vote-slider">
-        <div class="vote-slider__slide">
-            {{mixins.img('vote-slider', 'compare-pink.jpg')}}
+        <div class="vote__inner">
+            <div class="vote-slider js-vote-slider">
+                <div class="vote-slider__slide">
+                    {{mixins.img('vote-slider', 'compare-pink.jpg')}}
+                </div>
+                <div class="vote-slider__slide">
+                    {{mixins.img('vote-slider', 'compare-black.jpg')}}
+                </div>
+                <div class="vote-slider__slide">
+                    {{mixins.img('vote-slider', 'compare-black.jpg')}}
+                </div>
+                <div class="vote-slider__slide">
+                    {{mixins.img('vote-slider', 'compare-black.jpg')}}
+                </div>
+            </div>
+            <div class="vote-slider__controls">
+                <span class="vote-slider__control vote-slider__conrtol_l">
+                    {{mixins.icon('arrow-l-slim')}}
+                </span>
+                <span class="vote-slider__control vote-slider__control_r">
+                    {{mixins.icon('arrow-r-slim')}}
+                </span>
+            </div>
         </div>
-        <div class="vote-slider__slide">
-            {{mixins.img('vote-slider', 'compare-black.jpg')}}
-        </div>
-        <div class="vote-slider__slide">
-            {{mixins.img('vote-slider', 'compare-black.jpg')}}
-        </div>
-        <div class="vote-slider__slide">
-            {{mixins.img('vote-slider', 'compare-black.jpg')}}
-        </div>
-    </div>
     </div>
 </section>

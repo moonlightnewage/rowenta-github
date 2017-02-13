@@ -17,6 +17,15 @@
 </div>
 {% endmacro %}
 
+{% macro imgdiff(type, src, mod, hover=false) %}
+<div class="block {{type}}__block {{type}}__block_{{mod}}">
+    {% if hover %}
+    <div class="block__img block__img_hover" style="background-image: url(img/{{hover}})"></div>
+    {% endif %}
+    <div class="block__img" style="background-image: url(img/{{src}})"></div>
+</div>
+{% endmacro %}
+
 {% macro btn(type, text) %}
 <div class="block block-btn {{type}}__block-btn">
     <button class="btn">{{text}}</button>

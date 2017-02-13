@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-arrow-down-rounded" viewBox="0 0 32 32">
+    <path d="M24.285 11.284L16 19.571l-8.285-8.288a1.01 1.01 0 1 0-1.429 1.43l8.999 9.002a1.009 1.009 0 0 0 1.428 0l8.999-9.002a1.01 1.01 0 1 0-1.427-1.429z"/>
+</symbol><symbol id="icon-arrow-l-slim" viewBox="0 0 32 32">
+    <path clip-rule="evenodd" d="M31.106 15H3.278l8.325-8.293a.999.999 0 1 0-1.414-1.414l-9.9 9.899a1.01 1.01 0 0 0 0 1.414l9.9 9.9a.999.999 0 1 0 1.414-1.414L3.278 17h27.828a1 1 0 0 0 0-2z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-arrow-r-slim" viewBox="0 0 32 32">
+    <path clip-rule="evenodd" d="M32 16.009c0-.267-.11-.522-.293-.714l-9.899-9.999a.993.993 0 0 0-1.414 0 1.016 1.016 0 0 0 0 1.428l8.193 8.275H1c-.552 0-1 .452-1 1.01s.448 1.01 1 1.01h27.586l-8.192 8.275a1.017 1.017 0 0 0 0 1.428.994.994 0 0 0 1.414 0l9.899-9.999c.187-.189.29-.449.293-.714z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-check" viewBox="0 0 32 32">
+    <path clip-rule="evenodd" d="M27.704 8.397a1.016 1.016 0 0 0-1.428 0L11.988 22.59l-6.282-6.193a1.016 1.016 0 0 0-1.428 0 .994.994 0 0 0 0 1.414l6.999 6.899c.39.386 1.039.386 1.429 0L27.704 9.811a.992.992 0 0 0 0-1.414c-.394-.391.395.39 0 0z" fill-rule="evenodd"/>
+</symbol></svg>

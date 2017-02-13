@@ -1,0 +1,81 @@
+.promo
+    min-height: 900px
+    padding-top: 50px
+    position: relative
+    &__img
+        &_main
+            width: 545px
+            height: 845px
+            position: absolute
+            right: 0
+            bottom: 0
+    &__quote
+        quotes: "\201C" "\201D"
+        font-size: 32px
+        +sitka
+        &:before, &:after
+            color: $pink
+    &__list
+        margin-top: 50px
+        max-width: 755px
+    &__item
+        min-height: 180px
+        +vertical
+        text-align: left
+    &__name
+        width: 280px
+        padding: 0 55px
+        display: inline-block
+        vertical-align: middle
+        font-size: 50px
+        line-height: 1
+        text-transform: uppercase
+        +myriad-cl
+        position: relative
+        &_mod:after
+            content: ''
+            width: calc(100% - 5px)
+            height: 3px
+            background-color: $l-pink
+            display: block
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translate(0, -50%)
+    &__desc
+        +vertical
+        text-align: left
+        width: 755-280 + px
+        min-height: inherit
+        display: inline-block
+        vertical-align: middle
+        font-size: 24px
+        +roboto
+        position: relative
+        p
+    &__block
+        position: absolute
+        .block__img
+            border: 3px solid $gray
+            position: absolute
+            top: 0
+            left: 0
+        &:after
+            background-color: #fff
+            top: 20px
+            left: 20px
+        &_sm
+            width: 246px
+            height: 242px
+            right: 0
+            bottom: -30px
+            z-index: 5
+            .block__img:hover
+                transition: opacity 0.3s ease
+                opacity: 0
+        &_lg
+            width: 320px
+            height: 320px
+            left: 0
+            bottom: -60px
+        

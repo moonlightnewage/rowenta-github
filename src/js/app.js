@@ -4,7 +4,11 @@ window.$ = $;
 window.jQuery = jQuery;
 
 import sayHello from './lib/sayHello.js';
+//import imageGallery from './lib/imgGallery.js';
+
+
 import ImageComparison from 'image-comparison';
+import slick from 'slick-carousel';
 
 
 sayHello();
@@ -28,5 +32,6 @@ var imageComparisonCollection = document.querySelectorAll('.js-comparison-contai
     }
 
 $(document).ready(function() {
-
+//    imageGallery('.js-vote-slider', '.js-vote-slider-controls');
+    $('.vote-slider').slick();
 });
