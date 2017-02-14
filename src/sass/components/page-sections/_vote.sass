@@ -1,9 +1,10 @@
 .vote
     min-height: 1035px
-    padding: 125px 95px
+    padding: 125px 0
     position: relative
     +image('bg-vote.png')
-    +cover
+    background-size: 100% 100%
+    background-repeat: no-repeat
     &__img
         width: 560px
         min-height: 460px
@@ -15,11 +16,21 @@
         bottom: -220px
     &__title
         display: inline-block
+        margin-bottom: 60px
         text-align: left
         color: #fff
         +myriad-c
     &__inner
         max-width: 740px
+        position: relative
+        &:after
+            width: 100%
+            min-height: 390px
+            content: ''
+            border: 3px solid #fff
+            position: absolute
+            top: 20px
+            left: 20px
     &__aside
         width: 405px
         height: 450px

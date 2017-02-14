@@ -9,6 +9,7 @@ a
     max-width: 1400px
     margin: 0 auto
     padding: 0 20px
+    position: relative
     +clr
 .col
     width: 50%
@@ -71,6 +72,12 @@ a
     &:hover
         transition: 0.3s
         background-color: $pink
+        .btn__txt_top
+            display: none
+        .btn__txt_btm
+            display: inline-block
+        .btn__icon
+            display: none
     &__icon-facebook
         +s(facebook)
         display: inline-block
@@ -86,6 +93,8 @@ a
     &__txt
         display: inline-block
         vertical-align: middle
+        &_btm
+            display: none
 .title
     font-size: 68px
     text-transform: uppercase

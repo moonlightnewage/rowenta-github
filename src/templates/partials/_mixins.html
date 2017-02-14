@@ -43,11 +43,12 @@
 </div>
 {% endmacro %}
 
-{% macro btnlg(type, icon, text) %}
+{% macro btnlg(type, icon, textt, textb) %}
 <div class="block block-btn {{type}}__block-btn">
     <button class="btn">
-        <span class="btn__icon-{{icon}}"></span>
-        <span class="btn__txt">{{text}}</span>
+        <span class="btn__icon btn__icon-{{icon}}"></span>
+        <span class="btn__txt btn__txt_top">{{textt}}</span>
+        <span class="btn__txt btn__txt_btm">{{textb}}</span>
     </button>
 </div>
 {% endmacro %}

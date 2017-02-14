@@ -1,9 +1,14 @@
 <section class="vote">
    <div class="vote__img" style="background-image: url(img/straight-vote.png)"></div>
+       <div class="container">
         <h2 class="title vote__title">Проголосуйте
         <br /> за учасників</h2>
         <div class="vote__inner">
-            <div class="preview-bl"></div>
+            <div class="preview-bl">
+                <div class="preview-bl__slide" style="background-image: url(img/compare-pink.jpg)"></div>
+                <div class="preview-bl__slide" style="background-image: url(img/compare-black.jpg)"></div>
+                <div class="preview-bl__slide" style="background-image: url(img/compare-black.jpg)"></div>
+            </div>
             <div class="preview-slider__controls">
                 <span class="preview-slider__control preview-slider__control_l">
                     {{mixins.icon('arrow-l-slim')}}
@@ -24,4 +29,5 @@
             {{mixins.icon('arrow-r-slim')}}
             </a>
         </div>
+    </div>
 </section>

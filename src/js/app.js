@@ -8,7 +8,6 @@ import sayHello from './lib/sayHello.js';
 import slider from './lib/baslider.js';
 import dropdown from './lib/dropdown.js';
 import videoPlayer from './lib/video.js';
-import imageGallery from './lib/slider.js';
 
 import slick from 'slick-carousel';
 
@@ -18,51 +17,30 @@ sayHello();
 
 $(document).ready(function() {
     
-    imageGallery();
-    
     $('.js-start-slider').beforeAfter();
     
     dropdown('.js-btn-dropdown');
     
     
+    var blockSlider = $('.preview-bl').slick({
+        infinite: true,
+        prevArrow: $('.icon-arrow-l-slim'),
+        nextArrow: $('.icon-arrow-r-slim'),
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+    
     var previewSlider = $('.js-preview-slider').slick({
-        infinite: false,
+        infinite: true,
         prevArrow: $('.icon-arrow-l-slim'),
         nextArrow: $('.icon-arrow-r-slim'),
         vertical: true,
         verticalSwiping: true,
         slidesToShow: 2,
         slidesToScroll: 1,
-        initialSlide: 1
+        asNavFor: blockSlider
     });
     
-    
-//    $(previewSlider).on('afterChange', function(event, slick, currentSlide){
-//        if (currentSlide == 2) { 
-//            $('.icon-arrow-r-slim').css({
-//                'opacity': '0.5'
-//            });
-//            $('.icon-arrow-l-slim').css({
-//                'opacity': '1'
-//            });
-//        }
-//        else if (currentSlide == 0) {
-//            $('.icon-arrow-l-slim').css({
-//                'opacity': '0.5'
-//            });
-//            $('.icon-arrow-r-slim').css({
-//                'opacity': '1'
-//            });
-//        }
-//        else {
-//            $('.icon-arrow-l-slim').css({
-//                'opacity': '1'
-//            });
-//            $('.icon-arrow-r-slim').css({
-//                'opacity': '1'
-//            });
-//        }
-//    });
     
     var productsSlider = $('.js-products-slider').slick({
         infinite: false,
